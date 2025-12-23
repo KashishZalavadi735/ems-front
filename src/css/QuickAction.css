@@ -1,0 +1,11 @@
+.action-box{
+    background: #fff;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+}
+
+.action-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50;
+}

@@ -1,0 +1,22 @@
+.card{
+    border-radius: 12px;
+}
+
+.font-style-design{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(13,110,253,0.15);
+}
+.pills-bg{
+    background-color: rgba(25,135,84,0.15);
+    font-size: 12px;
+}
+
+tr{
+    border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.table>:not(caption)>*>*{
+    border-bottom: 0px;
+}

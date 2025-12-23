@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body{
+    background-color: #f8f9fa;
+    min-width: 0;
+    margin-left: 300px;
+    min-height: 100vh;
+    overflow: visible;
+} */
+
+.wrapper {
+    overflow-y: auto;
+}
+
+.inner-my{
+  margin: 0 auto;
+ width: 90%;   
+  max-height: 100vh;
+}
