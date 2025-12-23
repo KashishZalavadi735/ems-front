@@ -35,13 +35,20 @@ function UpdateEmployeeForm() {
         setPositions(positions);
         setStatuses(statuses);
 
+        // Fetch employee
         const employee = await getEmployeeById(id!);
+
+        // Convert joiningDate to yyyy-MM-dd for input
+        const formattedDate = employee.joiningDate
+          ? new Date(employee.joiningDate).toISOString().substring(0, 10)
+          : "";
+
         setFormData({
           firstName: employee.firstName,
           lastName: employee.lastName,
           email: employee.email,
           contactNumber: employee.contactNumber,
-          joiningDate: employee.joiningDate,
+          joiningDate: formattedDate,
           department: employee.department,
           position: employee.position,
           status: employee.status,
@@ -119,7 +126,14 @@ function UpdateEmployeeForm() {
     }
 
     try {
-      const response = await updateEmployee(id!, formData);
+      const dataToSubmit = {
+        ...formData,
+        joiningDate: formData.joiningDate
+          ? new Date(formData.joiningDate)
+          : null,
+      };
+
+      const response = await updateEmployee(id!, dataToSubmit);
       console.log("Employee Updated: ", response);
       toast.success("Employee updated successfully!");
       navigate("/Employees");

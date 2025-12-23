@@ -22,7 +22,7 @@ function RecentEmployee() {
       try {
         const data = await getRecentEmployees();
         console.log("Recent employees: ", data);
-        setEmployees(data.employees);
+        setEmployees(data.data.employees);
       } catch (error) {
         console.error("Error fetching employees: ", error);
       } finally {

@@ -32,7 +32,7 @@ function ProcessPayrollForm() {
     }
 
     try {
-      const res = await processPayroll(Number(selectedEmployee), month);
+      const res = await processPayroll(selectedEmployee, month);
       console.log(res);
       navigate("/Payroll");
       toast.success("Payroll processed successfully!");

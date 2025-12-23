@@ -159,7 +159,7 @@ function EmployeeList() {
       </div>
 
       {/* Employee Table */}
-      <div className="card p-4 shadow-sm border-0">
+      <div className="card p-4 shadow-sm border-0 table-responsive">
         {loading ? (
           <h6>Loading employees...</h6>
         ) : (

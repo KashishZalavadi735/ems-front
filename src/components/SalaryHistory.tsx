@@ -107,7 +107,7 @@ function SalaryHistory() {
                     {p.payrollStatus}
                   </span>
                 </td>
-                <td style={{ cursor: "pointer" }}>
+                <td style={{ cursor: "pointer" }} className="text-center">
                   <span
                     className="text-decoration-none me-2 text-primary"
                     onClick={() => handleView(p.id)}

@@ -68,7 +68,7 @@ function ManageLeave() {
                     <td>{index+1}</td>
                     <td>{lt.leaveType}</td>
                     <td>{lt.description}</td>
-                    <td style={{cursor: "pointer"}}>
+                    <td style={{cursor: "pointer"}} className="text-center">
                         <i className="bi bi-pencil-square text-info mx-3" onClick={() => {handleUpdateLeaveType(lt.id)}}></i>
                         <i className="bi bi-trash text-danger" onClick={() => {handleDeleteLeaveType(lt.id)}}></i>
                     </td>

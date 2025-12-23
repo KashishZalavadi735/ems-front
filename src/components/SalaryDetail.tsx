@@ -148,7 +148,7 @@ function SalaryDetail() {
                         {p.payrollStatus}
                       </span>
                     </td>
-                    <td style={{cursor: "pointer"}}>
+                    <td style={{cursor: "pointer"}} className="text-center">
                       <span
                         className="text-primary me-2"
                         onClick={() => handleView(p.id)}

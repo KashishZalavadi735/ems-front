@@ -17,7 +17,7 @@ export const getEmployees = async () => {
 };
 
 //  Process payroll
-export const processPayroll = async (employeeId: any, month: any) => {
+export const processPayroll = async (employeeId: string, month: any) => {
     const response = await axios.post(PAYROLL_URL.PROCESS_PAYROLL, { employeeId, month }, {
         headers: getAuthHeader()
     });
@@ -33,7 +33,7 @@ export const getAllPayrolls = async ( page: number = 1, limit: number = 10 ) => 
 };
 
 // Get payroll for single employee
-export const getPayrollById = async (payrollId: number) => {
+export const getPayrollById = async (payrollId: string | number) => {
     const response = await axios.get(PAYROLL_URL.GET_PAYROLL_BY_EMP(payrollId), {
         headers: getAuthHeader()
     });
@@ -49,7 +49,7 @@ export const getMyPayrollHistory = async () => {
 }
 
 // Get salary slip by Id
-export const getSalarySlipById = async (id: number) => {
+export const getSalarySlipById = async (id: string | number) => {
     const response = await axios.get(PAYROLL_URL.GET_SALARY_SLIP(id),{
         headers: getAuthHeader()
     });
@@ -58,7 +58,7 @@ export const getSalarySlipById = async (id: number) => {
 
 // Download Salary Slip
 
-export const downloadSalarySlip = async (id: number) => {
+export const downloadSalarySlip = async (id: string | number) => {
   try {
     const response = await axios.get(PAYROLL_URL.DOWNLOAD_SALARY_SLIP(id), {
       headers: getAuthHeader(),

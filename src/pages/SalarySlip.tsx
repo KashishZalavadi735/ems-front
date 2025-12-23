@@ -13,7 +13,7 @@ function SalarySlip() {
     if (!id) return;
     const fetchPayrolls = async () => {
       try {
-        const data = await getSalarySlipById(Number(id));
+        const data = await getSalarySlipById(id);
         console.log("Payroll fetched: ", data);
         setPayroll(data);
       } catch (error) {

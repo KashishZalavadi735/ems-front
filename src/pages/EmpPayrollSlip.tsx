@@ -13,7 +13,7 @@ function EmpPayrollSlip() {
     if (!id) return;
     const fetchPayroll = async () => {
       try {
-        const data = await getPayrollById(Number(id));
+        const data = await getPayrollById(id);
         console.log("Payroll fetched: ", data);
 
         if (Array.isArray(data)) {

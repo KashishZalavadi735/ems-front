@@ -94,7 +94,7 @@ function ManageLeaves() {
                         {leave.status}
                       </span>
                     </td>
-                    <td style={{ cursor: "pointer" }}>
+                    <td style={{ cursor: "pointer" }} className="text-center">
                       <i
                         className="bi bi-pencil-square text-info me-3"
                         onClick={() => handleEdit(leave.id)}

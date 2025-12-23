@@ -41,7 +41,7 @@ export const getAllLeaves = async ( page: number = 1, limit: number = 5 ) => {
 
 // Get Leave by id
 export const getLeaveById = async (id: number | string) => {
-    const response = await axios.get(LEAVE.GET_LEAVE_BY_ID(Number(id)),{
+    const response = await axios.get(LEAVE.GET_LEAVE_BY_ID(id),{
         headers: getAuthHeader()
     });
     return response.data.data;
@@ -49,7 +49,7 @@ export const getLeaveById = async (id: number | string) => {
 
 // Update leave
 export const updateLeave = async (id:string, leaveData: any) => {
-    const response = await axios.put(LEAVE.UPDATE_LEAVE(Number(id)),leaveData, {
+    const response = await axios.put(LEAVE.UPDATE_LEAVE(id),leaveData, {
         headers: getAuthHeader()
     });
     return response.data.data;
