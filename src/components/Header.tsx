@@ -1,10 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faBell,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faBell, faUser } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
+import "../css/Header.css";
 
 interface HeaderProps {
   toggleSidebar: () => void;
@@ -24,10 +21,7 @@ function Header({ toggleSidebar }: HeaderProps) {
   }, []);
 
   return (
-    <div
-      className="d-flex justify-content-between align-items-center shadow-sm bg-white p-3"
-      style={{ position: "sticky", width: "100%", top: "0", zIndex: "1000" }}
-    >
+    <div className="d-flex justify-content-between align-items-center shadow-sm bg-white p-3 header">
       <div className="d-flex align-items-center gap-3">
         {isMobile && (
           <FontAwesomeIcon
