@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import ManageLeave from "../components/ManageLeaveTypes";
-
+import "../css/Style.css"
 
 function LeavesTypes() {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ function LeavesTypes() {
   }
   return (
     <div>
-      <div className="d-flex justify-content-between align-items-center py-3">
+      <div className="d-flex justify-content-between align-items-center py-3 header-class">
         <div>
           <h4>Leaves Types</h4>
           <small>Add and Manage types of Leaves.</small>

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import type { Payroll } from "../types/types";
 import { getAllPayrolls, downloadSalarySlip } from "../services/payrollService";
 import { getEnums } from "../services/enumService";
+import "../css/Style.css"
 
 function SalaryDetail() {
   const navigate = useNavigate();
@@ -77,12 +78,12 @@ function SalaryDetail() {
 
   return (
     <div className="card p-4 shadow-sm border-0 h-100 table-responsive">
-      <div className="d-flex justify-content-between align-items-center pb-4 border-bottom">
+      <div className="d-flex justify-content-between align-items-center pb-4 border-bottom header-class">
         <div className="d-flex justify-content-start">
           <h6 className="">Payroll List</h6>
         </div>
 
-        <div className="d-flex justify-content-end gap-2">
+        <div className="d-flex justify-content-end gap-2 header-class-sm">
           <select
             className="form-select"
             value={selectedDepartment}

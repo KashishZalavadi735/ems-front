@@ -1,0 +1,6 @@
+/* Optional spacing for small screens */
+@media (max-width: 576px) {
+  .row > div {
+    margin-bottom: 1rem;
+  }
+}

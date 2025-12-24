@@ -2,6 +2,7 @@ import EmployeeList from "../components/EmployeeList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
+import "../css/Style.css";
 
 function Employees() {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ function Employees() {
   return (
     <div>
       {/* Header */}
-      <div className="d-flex justify-content-between align-items-center py-3">
+      <div className="d-flex justify-content-between align-items-center py-3 header-class">
         <div>
           <h4>Employee Management</h4>
           <small>Manage all employees in your organization</small>

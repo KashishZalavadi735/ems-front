@@ -1,0 +1,13 @@
+@media screen and (max-width: 473px) {
+    .header-class{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header-class-sm{
+        flex-direction: column;
+        gap: 15px;
+    }
+}

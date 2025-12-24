@@ -2,13 +2,6 @@
   margin: 0;
   padding: 0;
 }
-/* body{
-    background-color: #f8f9fa;
-    min-width: 0;
-    margin-left: 300px;
-    min-height: 100vh;
-    overflow: visible;
-} */
 
 .wrapper {
     overflow-y: auto;
@@ -18,4 +11,17 @@
   margin: 0 auto;
  width: 90%;   
   max-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-card{
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .user-dashboard{
+    flex-direction: column;
+    gap: 20px;
+  }
 }

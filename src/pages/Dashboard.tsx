@@ -67,7 +67,7 @@ function Dashboard() {
 
           {/* Recent Employees + Quick Actions */}
           <div className="row py-3 ">
-            <div className="col-12 col-lg-8">
+            <div className="col-12 col-lg-8 dashboard-card">
               <RecentEmployee />
             </div>
 
@@ -86,7 +86,7 @@ function Dashboard() {
                   background: "linear-gradient(90deg, #6a11cb, #2575fc)",
                 }}
               >
-                <div className="d-flex align-items-center justify-content-between">
+                <div className="d-flex align-items-center justify-content-between user-dashboard">
                   <div>
                     <h5 className="text-white fw-bold mb-1">
                       Welcome back, {employee?.firstName}!

@@ -27,3 +27,9 @@
     transform: translateX(0);
   }
 }
+
+.nav-link.active-link {
+  border-left: 4px solid #ffffff; /* white accent on left */
+  background-color: transparent;
+  padding-left: 0.75rem; /* adjust for border */
+}

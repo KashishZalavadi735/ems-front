@@ -4,7 +4,7 @@ import {
   faCalculator,
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-
+import "../css/Style.css";
 import SalaryDetail from "../components/SalaryDetail";
 import SalaryHistory from "../components/SalaryHistory";
 
@@ -24,7 +24,7 @@ function Payroll() {
       {role === "ADMIN" ? (
         <>
           {/* Admin View */}
-          <div className="d-flex justify-content-between align-items-center pt-3">
+          <div className="d-flex justify-content-between align-items-center pt-3 header-class">
             <div>
               <h4>Payroll Management</h4>
               <small>Process and manage employee salaries</small>

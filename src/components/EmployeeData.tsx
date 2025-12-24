@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getMyProfile } from "../services/profileService";
 import type { ProfileData } from "../types/types";
+import "../css/EmployeeData.css";
 
 function EmployeeData() {
   const location = useLocation();
@@ -51,7 +52,7 @@ function EmployeeData() {
     <div className="card shadow-sm border-0 h-100 mt-4">
       {/* Header */}
       <div className="p-4 text-white" style={{ backgroundColor: "#4C3FE1" }}>
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between align-items-center profile-header">
           <div className="d-flex align-items-center">
             <div
               className="bg-white text-primary fw-bold rounded-circle d-flex align-items-center justify-content-center me-3"

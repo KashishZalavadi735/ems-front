@@ -1,0 +1,11 @@
+.wrapper.container {
+  max-width: 1320px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .wrapper.container {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

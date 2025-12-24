@@ -53,7 +53,7 @@ function SalarySlip() {
         </h5>
 
         <div className="row">
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <p>
               <b>Employee Name : </b>
               {payroll.employee.firstName} {payroll.employee.lastName}
@@ -67,7 +67,7 @@ function SalarySlip() {
               {payroll.employee.department}
             </p>
           </div>
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <p>
               <b>Pay Date : </b>
               {payroll.createdAt}
