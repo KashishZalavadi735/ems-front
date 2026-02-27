@@ -58,7 +58,7 @@ function Sidebar({ isSidebarOpen, closeSidebar }: SidebarProps) {
         style={{ height: "100%" }}
       >
         {/* User Info */}
-        <div className="d-flex align-items-center gap-3 ps-3 admin mb-3 mt-3">
+        <div className="d-flex align-items-center gap-3 ps-3 mb-3 mt-3">
           <FontAwesomeIcon icon={faUser} />
           <div>
             <div className="fw-bold">
